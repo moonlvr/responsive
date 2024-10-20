@@ -86,23 +86,37 @@ body{
     
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .container {
     padding: 10px; /* Reduce padding for small screens */
     width: 700px;
   }
   #title {
-    font-size: 18px; /* Adjust title size for smaller screens */
+    font-size: 14px; /* Adjust title size for smaller screens */
   }
   #logo2 {
     width: 30px;
     height: 30px;
   }
+  .nav-logo{
+    width: 100px;
+    margin-left: -20px;
+  
+  }
+  .nav-bar{
+    width: 140px;
+    margin-left: -180px;
+    width: 100px;
+  }
+  .nav-register{
+    width: 200px;
+  }
 
   #register {
-    width: 80px; /* Adjust button size */
-    height: 25px;
+    width: 90px; /* Adjust button size */
+    height: 30px;
     font-size: 12px;
+    margin-right: 320px;
   }
   .navigation li {
     margin: 10px 0;  /*space between list items */
