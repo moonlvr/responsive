@@ -1,0 +1,118 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+body{
+  background-color: rgb(187, 219, 170);
+}
+.container{
+  background-color: rgb(143, 176, 110);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+  height: 67px;
+}
+.nav-logo{
+  display: flex;
+  
+  
+}
+ #logo2{
+  width: 44px;
+  height: 45px;
+  margin-top: -7px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  
+}
+ .navigation li a {
+  text-decoration: none;
+  color: rgb(254, 254, 254);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  
+}
+.navigation li a:hover{
+  color: rgb(0, 87, 0);
+
+ 
+}
+.nav-logo, .nav-bar, .nav-register {
+  width: 100%;
+  padding: 20px;
+}
+#register {
+  float: right;
+  color: rgb(91, 150, 31);
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 40px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 40px;
+}
+#register:hover{
+  background-color: rgb(218, 235, 201);
+  
+}
+
+/*RESPONSIVE WEB PAGE*/
+@media (max-width:1000px){
+  .nav-bar {
+    display: flex;
+    justify-content: center; /*to center the list*/
+    margin-top: 40px; /*para pumantay doon sa header*/
+  }
+  
+  .navigation {
+    flex-direction: column; /*para pababa yung allignment*/
+    align-items: center;
+    width: 100%;  /* full width */
+    padding: 0;background-color:  rgb(143, 176, 110);
+    width: 300px;
+    height: 200px;
+    
+  }
+  .navigation li a {
+    margin: 10px 0;  /*space between list items */
+    font-size: 25px;
+    
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 10px; /* Reduce padding for small screens */
+    width: 700px;
+  }
+  #title {
+    font-size: 18px; /* Adjust title size for smaller screens */
+  }
+  #logo2 {
+    width: 30px;
+    height: 30px;
+  }
+
+  #register {
+    width: 80px; /* Adjust button size */
+    height: 25px;
+    font-size: 12px;
+  }
+  .navigation li {
+    margin: 10px 0;  /*space between list items */
+    font-size: 20px;
+  }
+  .nav-bar ul{
+    margin-top: 15px;
+    background-color:  rgb(143, 176, 110);
+    width: 300px;
+    height: 200px;
+  }
+  
+}
